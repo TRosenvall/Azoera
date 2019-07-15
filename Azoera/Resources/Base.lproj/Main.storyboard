@@ -27,23 +27,29 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAG-nY-haT">
                                                 <rect key="frame" x="0.0" y="0.0" width="148.33333333333334" height="90.333333333333329"/>
                                                 <state key="normal" title="Login"/>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="077-zL-3Ry" eventType="touchUpInside" id="Pku-yH-4Sx"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRJ-Ub-IcE">
                                                 <rect key="frame" x="0.0" y="96.333333333333314" width="148.33333333333334" height="90.333333333333314"/>
                                                 <state key="normal" title="Signup"/>
+                                                <connections>
+                                                    <action selector="signupButtonTapped:" destination="077-zL-3Ry" eventType="touchUpInside" id="vRF-Xp-LCJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="yaO-ax-cuN">
                                         <rect key="frame" x="148.33333333333334" y="0.0" width="281.66666666666663" height="186.66666666666666"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5tV-Jv-a1N">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5tV-Jv-a1N" customClass="AzoeraTextField" customModule="Azoera" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="281.66666666666669" height="53"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kyo-Bc-TxI">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kyo-Bc-TxI" customClass="AzoeraTextField" customModule="Azoera" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="67" width="281.66666666666669" height="52.666666666666657"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="60" id="LCB-FW-bgo"/>
@@ -52,7 +58,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm your password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XAE-Nu-jSZ">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm your password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XAE-Nu-jSZ" customClass="AzoeraTextField" customModule="Azoera" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="133.66666666666663" width="281.66666666666669" height="53"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -91,16 +97,25 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pba-XH-xlM">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
                                         <state key="normal" title="Help?"/>
+                                        <connections>
+                                            <action selector="helpButtonTapped:" destination="077-zL-3Ry" eventType="touchUpInside" id="Uoa-u2-aPr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tD6-cj-uno">
                                         <rect key="frame" x="48" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="FAQ"/>
+                                        <connections>
+                                            <action selector="faqButton:" destination="077-zL-3Ry" eventType="touchUpInside" id="gH6-oV-ILr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiR-L1-aFN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiR-L1-aFN" customClass="AzoeraButton" customModule="Azoera" customModuleProvider="target">
                                 <rect key="frame" x="148.33333333333337" y="604.66666666666663" width="225.66666666666663" height="53"/>
                                 <state key="normal" title="Sign me up"/>
+                                <connections>
+                                    <action selector="signMeUpButtonTapped:" destination="077-zL-3Ry" eventType="touchUpInside" id="sip-uC-GA8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

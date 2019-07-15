@@ -10,12 +10,20 @@ import UIKit
 
 class AzoeraButton: UIButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupUI()
     }
-    */
+    
+    func updateFont (to fontName: String) {
+        guard let size = self.titleLabel?.font.pointSize else {return}
+        self.titleLabel?.font = UIFont(name: fontName, size: size)!
+    }
+    
+    func setupUI () {
+        updateFont(to: FontNames.latoRegular)
+        self.layer.backgroundColor = UIColor.azoeraGreen.cgColor
+        self.setTitleColor(UIColor.mainTextColor, for: .normal)
+    }
 
 }

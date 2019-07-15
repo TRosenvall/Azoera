@@ -31,6 +31,8 @@ struct FontNames {
 
 extension UIColor {
     //TODO: - Add spaceGray and greenAccent Colors
+    static let azoeraBackground = UIColor(named: "azoeraBackground")!
+    static let azoeraGreen = UIColor(named: "azoeraGreen")!
     static let borderHighlightGray = UIColor(named: "boderHighlight")!
     static let subltleTextColor = UIColor(named: "subtleText")!
     static let mainTextColor = UIColor(named: "mainText")!
